@@ -15,5 +15,8 @@ For my visualization I took the original layout, added the Democratic results to
 ###Kate Watkins ~ kyw356
 For my changes, I wanted to clean up the API by aligning the graph and text. I aligned everything to the left, put the % sign on the left side of the text, and put ( ) sround the percentage so its easier to read. I also added a title, making it bigger and underlined. 
 
+###Chris King ~ cakd47
+Changes
+
 ###ADD OTHER VISUALIZATIONS HERE
 
