@@ -1,3 +1,9 @@
+.h1
+{
+    font-family: cursive;
+    font-size: 4em;
+}
+
 body {
     background-color: #EEE;
 }
@@ -6,18 +12,24 @@ body {
     font-family: arial;
     font-size: 1.5em;
     min-width: 200px;
-    text-align: right;
+    /*text-align: right;*/
     margin: 8px 5px;
+    text-align: left;
 }
 #graph .bar {
     width: 0;
     height: 35px;
     background-color: coral;
     margin: 5px;
-    float: left;
+    /*float:none;*/
+    text-align: center;
+    
 }
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
+
+
+

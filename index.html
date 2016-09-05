@@ -7,7 +7,7 @@
     <script src="d3.v3.min.js"></script>
 </head>
 <body>
-    
+    <h1><u>Huffingtonpost Pollster API</u></h1>
     <div id="graph"></div>
     
     <script>
@@ -26,7 +26,7 @@
                 candidateWrapper.append("div")
                     .classed("choice", true)
                     .text(function(candidate) {
-                        return candidate.choice + " " + candidate.value + "%";
+                        return candidate.choice + "   " + "(%" + candidate.value + ")";
                     });
                 
                 candidateWrapper.append("div")
