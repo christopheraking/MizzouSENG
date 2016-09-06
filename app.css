@@ -74,3 +74,8 @@ body {
   display: table;
   clear: both;
 }
+
+#graphsmbtz7 .bar{
+  height: 50px;
+  margin: 7px;
+}
