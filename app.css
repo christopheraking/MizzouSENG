@@ -23,7 +23,7 @@ body {
     margin: 5px;
     /*float:none;*/
     text-align: center;
-    
+
 }
 #demGraph .choice {
     float: left;
@@ -41,9 +41,32 @@ body {
     margin: 5px;
     /*float:none;*/
     text-align: center;
-    
+
 }
 
+.graphs .choice {
+    float: left;
+    font-family: arial;
+    font-size: 1.5em;
+    min-width: 200px;
+    text-align: left;
+    margin: 8px 5px;
+}
+.graphs .bar {
+    width: 0;
+    height: 35px;
+    background-color: coral;
+    margin: 5px;
+    float: right;
+}
+.graphs .value {
+    float: right;
+    font-family: arial;
+    font-size: 1.5em;
+    min-width: 200px;
+    text-align: left;
+    margin: 8px 5px;
+}
 
 
 .group:after {
@@ -51,6 +74,3 @@ body {
   display: table;
   clear: both;
 }
-
-
-
