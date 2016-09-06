@@ -18,5 +18,8 @@ For my changes, I wanted to clean up the API by aligning the graph and text. I a
 ###Chris King ~ cakd47
 For my project, I modified the original layout to include the Democratic results, changed the colors of the bars to represent the different parties, modified the text alignment, and cleaned up the text presentation. Also renamed index.html to cakd47.html.
 
+###Sydney Bates ~ smbtz7
+For my changes, I added the Democratic results, changed the height, and changed the margins. I also renamed index.html to smbtz7.html.
+ 
 ###ADD OTHER VISUALIZATIONS HERE
 
