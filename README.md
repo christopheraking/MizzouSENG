@@ -21,5 +21,3 @@ For my project, I modified the original layout to include the Democratic results
 ###Sydney Bates ~ smbtz7
 For my changes, I added the Democratic results, changed the height, and changed the margins. I also renamed index.html to smbtz7.html.
  
-###ADD OTHER VISUALIZATIONS HERE
-
