@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Presidential Primary Data 2016</title>
+    <link href="app.css" rel="stylesheet" type="text/css">
+    <script src="jquery-1.12.0.min.js"></script>
+    <script src="d3.v3.min.js"></script>
+</head>
+<body>
+      <div>
+        <h2 align="center">Republic Primary Results</h2>
+        <div id="graph" class="graphs"></div>
+      </div>
+      <div>
+        <h2 align="center">Democratic Primary Results</h2>
+        <div id="graph2" class="graphs"></div>
+      </div>
+
+    <script>
+
+        var url = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-gop-primary";
+        var url2 = "http://elections.huffingtonpost.com/pollster/api/charts/2016-national-democratic-primary";
+
+        $.ajax(url, {
+            dataType: "jsonp",
+            jsonpCallback: "pollsterCallback",
+            cache: true,
+            success: function(data) {
+
+                var candidateBar = d3.select("#graph").selectAll("div").data(data.estimates),
+                    candidateWrapper = candidateBar.enter().append("div").classed("group", true);
+
+                candidateWrapper.append("div")
+                    .classed("choice", true)
+                    .text(function(candidate) {
+                        return candidate.choice;
+                    });
+
+                candidateWrapper.append("div")
+                    .classed("value", true)
+                    .text(function(candidate) {
+                        return (parseFloat(candidate.value)).toFixed(2) + "%";
+                    });
+
+                candidateWrapper.append("div")
+                    .classed("bar", true)
+                    .transition()
+                    .duration(1000)
+                    .style("width", function(candidate) {
+                        return candidate.value * 10 + "px";
+                    });
+
+            }
+        });
+
+        $.ajax(url2, {
+            dataType: "jsonp",
+            jsonpCallback: "pollsterCallback",
+            cache: true,
+            success: function(data) {
+
+                var candidateBar = d3.select("#graph2").selectAll("div").data(data.estimates),
+                    candidateWrapper = candidateBar.enter().append("div").classed("group", true);
+
+                    candidateWrapper.append("div")
+                        .classed("choice", true)
+                        .text(function(candidate) {
+                            return candidate.choice;
+                        });
+
+                    candidateWrapper.append("div")
+                        .classed("value", true)
+                        .text(function(candidate) {
+                            return (parseFloat(candidate.value)).toFixed(2) + "%";
+                        });
+
+                candidateWrapper.append("div")
+                    .classed("bar", true)
+                    .transition()
+                    .duration(1000)
+                    .style("width", function(candidate) {
+                        return candidate.value * 10 + "px";
+                    });
+
+            }
+        });
+
+    </script>
+</body>
+</html>
