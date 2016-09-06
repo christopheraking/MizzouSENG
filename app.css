@@ -7,7 +7,7 @@
 body {
     background-color: #EEE;
 }
-#graph .choice {
+#gopGraph .choice {
     float: left;
     font-family: arial;
     font-size: 1.5em;
@@ -16,15 +16,36 @@ body {
     margin: 8px 5px;
     text-align: left;
 }
-#graph .bar {
+#gopGraph .bar {
     width: 0;
     height: 35px;
-    background-color: coral;
+    background-color: red;
     margin: 5px;
     /*float:none;*/
     text-align: center;
     
 }
+#demGraph .choice {
+    float: left;
+    font-family: arial;
+    font-size: 1.5em;
+    min-width: 200px;
+    /*text-align: right;*/
+    margin: 8px 5px;
+    text-align: left;
+}
+#demGraph .bar {
+    width: 0;
+    height: 35px;
+    background-color: blue;
+    margin: 5px;
+    /*float:none;*/
+    text-align: center;
+    
+}
+
+
+
 .group:after {
   content: "";
   display: table;
